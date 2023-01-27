@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9dc0ecc9.chunk.css",
+    "main.js": "/static/js/main.14e08a32.chunk.js",
+    "main.js.map": "/static/js/main.14e08a32.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5e917a17.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5e917a17.js.map",
+    "static/js/2.e50a37f6.chunk.js": "/static/js/2.e50a37f6.chunk.js",
+    "static/js/2.e50a37f6.chunk.js.map": "/static/js/2.e50a37f6.chunk.js.map",
+    "static/js/3.f41d6f52.chunk.js": "/static/js/3.f41d6f52.chunk.js",
+    "static/js/3.f41d6f52.chunk.js.map": "/static/js/3.f41d6f52.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.9dc0ecc9.chunk.css.map": "/static/css/main.9dc0ecc9.chunk.css.map",
+    "static/js/2.e50a37f6.chunk.js.LICENSE.txt": "/static/js/2.e50a37f6.chunk.js.LICENSE.txt",
+    "static/media/cooking.d00b7023.gif": "/static/media/cooking.d00b7023.gif",
+    "static/media/landingPage.f148145b.jpg": "/static/media/landingPage.f148145b.jpg",
+    "static/media/loading.20074cb6.gif": "/static/media/loading.20074cb6.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5e917a17.js",
+    "static/js/2.e50a37f6.chunk.js",
+    "static/css/main.9dc0ecc9.chunk.css",
+    "static/js/main.14e08a32.chunk.js"
+  ]
+}
