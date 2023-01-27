@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 function FilterOrder() {
   const dispatch = useDispatch();
-  const [order, setOrder] = useState("");
+  const setOrder = useState("");
 
   function handleOrderName(e) {
     e.preventDefault();
