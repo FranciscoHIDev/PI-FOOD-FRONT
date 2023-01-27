@@ -10,12 +10,11 @@ export const FILTER_BY_SCORE = "FILTER_BY_SCORE"
 export const FILTER_BY_NAME = "FILTER_BY_NAME"
 export const CLEAR_DETAIL = "CLEAR_DETAIL"
 
-const API_URL = 'http://localhost:3001/recipes'
-const API_URL2 = 'http://localhost:3001/diets'
+
 
 export const getAllRecipes = () => async (dispatch) => {
     try {
-        const { data } = await axios.get(API_URL)
+        const { data } = await axios.get("/recipes")
         dispatch({
             type: 'GET_ALL_RECIPES',
             payload: data.result
@@ -27,7 +26,7 @@ export const getAllRecipes = () => async (dispatch) => {
 
 export const getRecipeById = (id) => async (dispatch) => {
     try {
-        const { data } = await axios.get(`${API_URL}/${id}`)
+        const { data } = await axios.get(`${"/recipes"}/${id}`)
         dispatch({
             type: 'GET_RECIPE_ID',
             payload: data
@@ -40,7 +39,7 @@ export const getRecipeById = (id) => async (dispatch) => {
 
 export const getRecipesName = (name) => async (dispatch) => {
     try {
-        const { data } = await axios.get(`http://localhost:3001/recipes?name=${name}`)
+        const { data } = await axios.get(`/recipes?name=${name}`)
         dispatch({
             type: 'GET_RECIPES_NAME',
             payload: data
@@ -52,7 +51,7 @@ export const getRecipesName = (name) => async (dispatch) => {
 
 export const getAllDiets = () => async (dispatch) => {
     try {
-        const { data } = await axios.get(API_URL2)
+        const { data } = await axios.get("/diets")
         dispatch({
             type: 'GET_ALL_DIETS',
             payload: data
@@ -64,7 +63,7 @@ export const getAllDiets = () => async (dispatch) => {
 
 export const postRecipe = (payload) => async (dispatch) => {
     try {
-        const created = await axios.post("http://localhost:3001/recipes", payload)
+        const created = await axios.post("/recipes", payload)
         return dispatch({
             type: "POST_RECIPE",
             payload: created
