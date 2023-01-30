@@ -31,13 +31,13 @@ function Home() {
         <NavBar />
         <SideBar />
       </div>
-      <PaginatedStyled>
+      <div>
         <Paginated
           recipesPerPage={recipesPerPage}
           recipes={recipes?.length}
           paginated={paginated}
         />
-      </PaginatedStyled>
+      </div>
       <ContainerStyled>
         {currentRecipes.length !== 0 ? (
           currentRecipes.map((e) => {
@@ -65,13 +65,7 @@ function Home() {
     </>
   );
 }
-const PaginatedStyled = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-`;
+
 const ContainerStyled = styled.div`
   display: flex;
   flex-direction: row;
