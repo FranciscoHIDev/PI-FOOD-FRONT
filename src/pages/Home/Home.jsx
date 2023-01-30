@@ -67,6 +67,7 @@ function Home() {
 }
 const PaginatedStyled = styled.div`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   align-content: center;
