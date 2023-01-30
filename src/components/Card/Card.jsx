@@ -12,7 +12,7 @@ function Card({ id, image, name, healthScore, diets, dishTypes }) {
       <ImagenStyled src={image} alt={name}></ImagenStyled>
       <DetailStyled>
         <h5>healthScore: {healthScore}</h5>
-        <h5>Dietas: {diets.map((diet) => diet).join(", ")}</h5>
+        <h5>Diets: {diets.map((diet) => diet).join(", ")}</h5>
         {/* <p>Tipo de plato: {dishTypes.map((d) => d).join(", ")}</p> */}
         <Link to={`/details/${id}`}>
           <ButtonStyled>VER MÁS INFO</ButtonStyled>
